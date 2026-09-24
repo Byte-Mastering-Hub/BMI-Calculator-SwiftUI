@@ -101,7 +101,7 @@ struct InputField: View {
                 .font(.caption)
                 .foregroundColor(AppTheme.label)
 
-            TextField(placeholder, text: $text)
+            TextField("", text: $text, prompt: Text(placeholder).foregroundColor(.white.opacity(0.5)))
                 .keyboardType(keyboard)
                 .padding()
                 .background(AppTheme.inputBg)
